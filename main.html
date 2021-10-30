@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>save To Local Storage</title>
+    <style>
+        .box {
+            background: rgb(2, 0, 36);
+            background: linear-gradient(70deg, rgba(2, 0, 36, 1)0%, rgba(70, 70, 132, 1)37%, rgba(0, 212, 255, 1)100%);
+            background-color: rgb(4, 4, 167);
+            height: 200px;
+            width: 300px;
+            border-radius: 10px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        input {
+            display: block;
+            position: relative;
+            border: 2px solid rgb(2, 2, 66);
+            border-radius: 7px;
+            width: 80%;
+            height: 20px;
+            padding: 4px;
+            margin: auto;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            padding: 10px;
+        }
+
+        button {
+            font-size: 20px;
+            background-color: rgb(74, 189, 228);
+            border-radius: 6px;
+            width: 30%;
+            border: 2px solid rgb(80, 80, 255);
+            padding: 5px;
+        }
+
+        .inputs {
+            width: 100%;
+            position: relative;
+            bottom: -40px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <input type="text" name="" id="text1" />
+
+        <div class="inputs" id="inputs">
+            <button onclick="saveToLocalStorage(this.id)" class="button" id="save">save</button>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
